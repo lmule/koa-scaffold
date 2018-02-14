@@ -32,5 +32,5 @@ const mapper = {
     port: port
 }
 
-replace('./pm2.json', mapper)
-replace('./package.json', mapper)
+// replace('./pm2.json', mapper)
+// replace('./package.json', mapper)
