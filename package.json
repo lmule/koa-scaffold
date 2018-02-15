@@ -1,0 +1,35 @@
+{
+  "name": "koa-scaffold",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "koa-scaffold": "biu-init.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmule/koa-scaffold.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lmule/koa-scaffold/issues"
+  },
+  "homepage": "https://github.com/lmule/koa-scaffold#readme",
+  "dependencies": {
+    "chalk": "^2.3.1",
+    "commander": "^2.14.1",
+    "download-git-repo": "^1.0.2",
+    "handlebars": "^4.0.11",
+    "inquirer": "^5.1.0",
+    "log-symbols": "^2.2.0",
+    "metalsmith": "^2.3.0",
+    "ora": "^1.4.0"
+  }
+}
