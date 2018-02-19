@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const inquirer = require('inquirer')
-const build = require('../lib/build')
+const skeleton = require('../lib/skeleton')
 
 inquirer.prompt([
     {
@@ -14,5 +14,5 @@ inquirer.prompt([
         default: 3000
     }
 ]).then(metadata => {
-    build(metadata)
+    skeleton(metadata)
 })
