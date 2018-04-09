@@ -13,5 +13,5 @@ inquirer.prompt([
         message: '请输入对应的类名'
     }
 ]).then(metadata => {
-    crud(metadata.tableName, metadata.modelName)
+    crud(metadata)
 })
