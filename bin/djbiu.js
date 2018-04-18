@@ -4,7 +4,7 @@ const program = require('commander')
 
 program
     .version('0.0.1')
-    .usage('-n 项目名称 -p 启动服务的端口号')
+    .usage("\n\t1. -n '项目名称' -p '启动服务的端口号'\n\t2. -t '表名' -m '类名'")
     .option('-n, --name [value]', '项目名称')
     .option('-p, --port <n>', '启动服务的端口号，默认是3000')
     .option('-t, --table [value]', '对应的表名')

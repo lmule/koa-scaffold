@@ -1,7 +1,7 @@
 {
     "name": "koa-scaffold",
     "version": "1.0.0",
-    "description": "",
+    "description": "基于koa2的脚手架，自动生成项目的整体框架，并提供工具自动生成单表的增删改查操作",
     "main": "index.js",
     "bin": {
         "djbiu": "bin/djbiu.js"
@@ -33,10 +33,15 @@
         "type": "git",
         "url": "git+https://github.com/lmule/koa-scaffold.git"
     },
-    "author": "",
+    "author": "dingrui",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/lmule/koa-scaffold/issues"
     },
-    "homepage": "https://github.com/lmule/koa-scaffold#readme"
+    "homepage": "https://github.com/lmule/koa-scaffold#readme",
+    "keywords": [
+        "koa2",
+        "scaffold",
+        "脚手架"
+    ]
 }
