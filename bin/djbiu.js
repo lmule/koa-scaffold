@@ -1,8 +1,6 @@
 #!/usr/bin/env node
 
 const program = require('commander')
-const skeleton = require('../lib/skeleton')
-const crud = require('../lib/crud')
 
 program
     .version('0.0.1')
@@ -15,24 +13,28 @@ program
     .command('crud', '自动生成model的增删改查')
     .parse(process.argv)
 
+// 初始化框架
 let projectName = program.name
 let port = program.port
-
-modelName = program.model
-tableName = program.table
 
 if (projectName && port) {
     const metadata = {
         projectName: projectName,
         port: port
     }
+    const skeleton = require('../lib/skeleton')
     skeleton(metadata)
 }
+
+// 初始化框架的增删改查
+modelName = program.model
+tableName = program.table
 
 if (modelName && tableName) {
     const metadata = {
         modelName: modelName,
         tableName: tableName
     }
+    const crud = require('../lib/crud')
     crud(metadata)
 }

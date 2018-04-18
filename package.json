@@ -22,6 +22,7 @@
         "metalsmith-ignore": "^0.1.2",
         "metalsmith-renamer": "^0.4.0",
         "mysql": "^2.15.0",
+        "node-cmd": "^3.0.0",
         "ora": "^1.4.0"
     },
     "devDependencies": {},
