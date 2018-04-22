@@ -30,19 +30,6 @@ program
     .action((options) => {
         require('./djbiu-crud')(options.table, options.model)
     })
-    // .action((cmd, options) => {
-    //     modelName = options.model
-    //     tableName = options.table
-
-    //     if (modelName && tableName) {
-    //         const metadata = {
-    //             modelName: modelName,
-    //             tableName: tableName
-    //         }
-    //         const crud = require('../lib/crud')
-    //         crud(metadata)
-    //     }
-    // })
     .on('--help', function() {
         console.log('  Examples:');
         console.log();
