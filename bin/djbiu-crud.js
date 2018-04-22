@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 const crud = require('../lib/crud')
 
 module.exports = (tableName, modelName) => {

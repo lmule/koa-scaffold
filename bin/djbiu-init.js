@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 const skeleton = require('../lib/skeleton')
 
 module.exports = (name, port) => {

@@ -1,1 +1,1 @@
-module.exports = require('./lib/crud')
+module.exports = require('./bin/djbiu')
