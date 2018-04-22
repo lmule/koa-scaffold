@@ -1,17 +1,28 @@
 #!/usr/bin/env node
 
-const inquirer = require('inquirer')
 const crud = require('../lib/crud')
 
-inquirer.prompt([
-    {
-        name: 'tableName',
-        message: '请输入对应的表名'
-    },
-    {
-        name: 'modelName',
-        message: '请输入对应的类名'
+module.exports = (tableName, modelName) => {
+    if (tableName && modelName) {
+        const metadata = {
+            tableName: tableName,
+            modelName: modelName
+        }
+        crud(metadata)
+        return
     }
-]).then(metadata => {
-    crud(metadata)
-})
+
+    const inquirer = require('inquirer')
+    inquirer.prompt([
+        {
+            name: 'tableName',
+            message: '请输入对应的表名'
+        },
+        {
+            name: 'modelName',
+            message: '请输入对应的类名'
+        }
+    ]).then(metadata => {
+        crud(metadata)
+    })
+}
