@@ -1,6 +1,6 @@
 {
     "name": "djbiu",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "基于koa2的脚手架，自动生成项目的整体框架，并提供工具自动生成单表的增删改查操作",
     "main": "index.js",
     "bin": {
