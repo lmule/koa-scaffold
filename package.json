@@ -10,6 +10,7 @@
         "lib": "lib"
     },
     "dependencies": {
+        "camel-case": "^3.0.0",
         "chalk": "^2.3.1",
         "commander": "^2.14.1",
         "download-git-repo": "^1.0.2",
